@@ -892,6 +892,11 @@ nav a:hover { color: var(--coffee); }
     padding-top: 10px;
   }
 
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
   .cart-item {
     grid-template-columns: 120px minmax(0, 1fr);
   }
@@ -922,11 +927,41 @@ nav a:hover { color: var(--coffee); }
   }
 
   .product-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .product-card {
+    border-radius: 18px;
+  }
+
+  .product-art {
+    height: 200px;
+  }
+
+  .product-copy {
+    padding: 12px 12px 14px;
+  }
+
+  .product-copy h3 {
+    margin: 10px 0 6px;
+    font-size: 1rem;
+  }
+
+  .product-copy p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .buy-now {
+    min-height: 40px;
+    margin-top: 12px;
+    font-size: 0.9rem;
   }
 
   .modal {
     padding: 18px;
+    grid-template-columns: 1fr;
   }
 
   .modal .product-art {
